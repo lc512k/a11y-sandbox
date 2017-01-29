@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const exphbs = require('express-handlebars');
-const focusController = require('./experiments/focus/main')
+const focusController = require('./server/controllers/focus')
 
 app.engine('html', exphbs({
 	defaultLayout: 'main',
